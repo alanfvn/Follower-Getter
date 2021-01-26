@@ -45,7 +45,7 @@ def main():
 
     # Below code will request for 5000 follower ids in one request and therefore will give 75K ids in every 15 minute
     # window (as 15 requests could be made in each window).
-    for user in tweepy.Cursor(api.followers_ids, screen_name="maxdotbam", count=5000).items():
+    for user in tweepy.Cursor(api.followers_ids, screen_name="Heawok", count=5000).items():
         followers_ids.append(user)
 
     log("Obtained " + str(len(followers_ids)) + " followers ids.... converting usernames")
